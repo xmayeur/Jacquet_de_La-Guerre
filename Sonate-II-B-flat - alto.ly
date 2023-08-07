@@ -53,14 +53,14 @@ viola = \relative c' {
   \compressMMRests R1*3| r4 r8 f a4 r8 c,|
   f4 r8 f bes bes, d g| g e a4 r8 d, g4| r8 g g c c d c4| c r4 r8 f, f f |
   d g g g  f a a a | f g g g g g g g | f a, a a c c c c| c2 r|
-   \compressMMRests R1*9| r8 c c e d f f f | e g a f bes g g g | f4 r r2|
-   R1| r4 a a4. g8 g4 c c2|a4 r r2|
-    \compressMMRests R1*6|
-    r4 r8 g, c d c4\bar "||"  \defaultTimeSignature \time 2/2 c r r2| R1*2 | r4 bes es g
-    f2 f4 f| f2 g | g a | a bes| bes4 c8d g,4. g8| f4 r r2|
-    R1*2| r4 f, bes d| f f, aes d|es bes' g es  | f2 g4. g8| g2 aes4. aes8|
-    a2 g4. g8| g2 f4. f8| f2 es4 d| g f es d| f2 f4. f8 f4 bes, f' es| d1\bar "|."
-    
+  \compressMMRests R1*9| r8 c c e d f f f | e g a f bes g g g | f4 r r2|
+  R1| r4 a a4. g8 g4 c c2|a4 r r2|
+  \compressMMRests R1*6|
+  r4 r8 g, c d c4\bar "||"  \defaultTimeSignature \time 2/2 c r r2| R1*2 | r4 bes es g
+  f2 f4 f| f2 g | g a | a bes| bes4 c8d g,4. g8| f4 r r2|
+  R1*2| r4 f, bes d| f f, aes d|es bes' g es  | f2 g4. g8| g2 aes4. aes8|
+  a2 g4. g8| g2 f4. f8| f2 es4 d| g f es d| f2 f4. f8 f4 bes, f' es| d1\bar "|."
+
 }
 
 \score {
@@ -69,7 +69,11 @@ viola = \relative c' {
     midiInstrument = "viola"
 
   } { \clef alto \viola }
-  \layout { }
+  \layout {
+    #(layout-set-staff-size 22)
+    \override SpacingSpanner.common-shortest-duration =
+    #(ly:make-moment 1/16)
+  }
   \midi {
     \tempo 2=75
   }
