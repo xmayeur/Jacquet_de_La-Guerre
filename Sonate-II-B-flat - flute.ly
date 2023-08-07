@@ -92,5 +92,6 @@ traverso = \relative c'' {
   \layout { 
   #(layout-set-staff-size 24)
   }
-  \midi{}
+  \midi{
+    \tempo 2=75
 }

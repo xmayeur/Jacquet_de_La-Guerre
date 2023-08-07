@@ -2,7 +2,6 @@
 
 \header {
   title = "Sonate II B-flat"
-  instrument = "Alto"
   composer = "Elisabeth Jacquet de La Guerre"
   copyright = "Transcription: Le Héron Mélomane 2023 - xavier@mayeur.be"
 }
@@ -72,6 +71,6 @@ viola = \relative c' {
   } { \clef alto \viola }
   \layout { }
   \midi {
-    \tempo 2=100
+    \tempo 2=75
   }
 }
