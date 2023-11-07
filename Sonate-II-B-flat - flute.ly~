@@ -90,7 +90,7 @@ traverso = \relative c'' {
     instrumentName = "Traverso"
   } \traverso
   \layout {
-    #(layout-set-staff-size 24)
+    #(layout-set-staff-size 20)
     \override SpacingSpanner.common-shortest-duration =
     #(ly:make-moment 1/16)
   }

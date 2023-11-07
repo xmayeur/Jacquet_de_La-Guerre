@@ -1,10 +1,10 @@
 \version "2.24.1"
-
+\include"../copyright.ily"
 \header {
   title = "Sonate II B-flat"
   instrument = "Violon"
   composer = "Elisabeth Jacquet de La Guerre"
-  copyright = "Transcription: Le Héron Mélomane  2023 - xavier@mayeur.be"
+
 }
 
 \paper {
